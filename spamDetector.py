@@ -8,7 +8,6 @@ def speak(text):
 	speak=Dispatch(("SAPI.SpVoice"))
 	speak.Speak(text)
 
-
 model = pickle.load(open('spam.pkl','rb'))
 cv=pickle.load(open('vectorizer.pkl','rb'))
 
