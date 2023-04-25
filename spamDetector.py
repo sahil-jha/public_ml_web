@@ -1,11 +1,7 @@
 import streamlit as st
 import pickle
 import numpy as np
-from win32com.client import Dispatch
 
-def speak(text):
-	speak=Dispatch(("SAPI.SpVoice"))
-	speak.Speak(text)
 
 model = pickle.load(open('spam.pkl','rb'))
 cv=pickle.load(open('vectorizer.pkl','rb'))
